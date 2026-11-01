@@ -14,3 +14,10 @@ Setup: `cp .env.example .env`, fill values, `npm i && npm run dev`. Deploy on Re
 **borrows:** bookId, bookTitle, bookImage, userName, userEmail, borrowDate, returnDate
 
 A unique index on (bookId, userEmail) prevents borrowing the same book twice.
+
+## Deployment (Render)
+1. Push this repo to GitHub.
+2. Create a new Web Service on Render and connect the repo.
+3. Build command: `npm install`, start command: `npm start`.
+4. Add `MONGODB_URI` and `CLIENT_URL` in the Environment tab.
+5. In MongoDB Atlas, allow network access from `0.0.0.0/0`.
